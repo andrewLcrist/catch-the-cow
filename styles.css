@@ -1,0 +1,72 @@
+body {
+  /*width: 100vw;*/
+  /*height: 100vh;*/
+  /*display: flex;*/
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1, h3 {
+  display: flex;
+}
+
+.game-canvas {
+  display: flex;
+  width: 1000px;
+  height: 600px;
+  background-image: url(./images/ecogreen.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.spot {
+  background-image: url('./images/cow1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.front {
+  position: absolute;
+  top: 65%;
+  left: 10%;
+  width: 350px;
+  height: 196px;
+}
+
+.right {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  width: 280px;
+  height: 157px;
+}
+
+.middle {
+  position: absolute;
+  top: 46%;
+  left: 35%;
+  width: 250px;
+  height: 140px;
+}
+
+.left {
+  position: absolute;
+  top: 48%;
+  left: 2%;
+  width: 210px;
+  height: 118px;
+}
+
+.rear {
+  position: absolute;
+  top: 44%;
+  left: 30%;
+  width: 150px;
+  height: 84px;
+}
