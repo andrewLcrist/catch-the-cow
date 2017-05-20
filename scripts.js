@@ -6,7 +6,7 @@ let timeUp = false
 let score = 0
 
 function peep() {
-  const time = randomTime(400, 1500)
+  const time = randomTime(500, 1500)
   const spot = randomSpot(spots)
   spot.classList.add('show')
   setTimeout(() => {
@@ -45,7 +45,7 @@ function startGame() {
   peep();
   setTimeout(() => {
     timeUp = true,
-    startGameScreen.style.display = 'block'
+    startGameScreen.style.display = 'flex'
   }, 10000)
 }
 
