@@ -8,10 +8,10 @@ let score = 0
 function peep() {
   const time = randomTime(500, 1500)
   const spot = randomSpot(spots)
-  spot.classList.add('show')
+  timeUp ? null : spot.classList.add('show')
   setTimeout(() => {
-    spot.classList.remove('show');
     if (!timeUp) peep();
+    spot.classList.remove('show');
   }, time);
 }
 
